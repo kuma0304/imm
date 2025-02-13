@@ -468,3 +468,54 @@ a {
     margin: 0;
 }
 /* ====================== End: About ====================== */
+
+.left-panel {
+    width: 300px;
+}
+
+.right-panel {
+    flex: 1;
+}
+
+.accordion-box {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.accordion-header {
+    background: #f8f9fa;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header.active {
+    background: #e9ecef;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.active .arrow {
+    transform: rotate(180deg);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tab-content.active {
+    display: block;
+}

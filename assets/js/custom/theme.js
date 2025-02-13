@@ -23,3 +23,29 @@ $('.hero-owl').owlCarousel({
         },
     }
 })
+
+$(document).ready(function() {
+    // Handle accordion header clicks
+    $('.accordion-header').click(function() {
+        // If this header is not already active
+        if (!$(this).hasClass('active')) {
+            // Close all other accordion contents
+            $('.accordion-content').slideUp();
+            $('.accordion-header').removeClass('active');
+            
+            // Open current accordion content
+            $(this).addClass('active');
+            $(this).next('.accordion-content').slideDown();
+            
+            // Handle tab switching
+            const tabId = $(this).data('tab');
+            $('.tab-content').removeClass('active');
+            $('#' + tabId).addClass('active');
+        }
+        // If header is already active, do nothing
+    });
+
+    // Set initial state
+    $('.accordion-header:first').addClass('active');
+    $('.accordion-content:first').show();
+});
