@@ -1,9 +1,15 @@
 /* ====================== Start: Variables ====================== */
 :root {
+    --accent: #DEFE7F;
+    --background: #F8F8F8;
+
+
+
     --primary-color: #006341;
     --primary-hover-color: #006341;
     --gray-color: #333;
     --light-gray: #eff2f7;
+    
 }
 
 /* ====================== End: Variables ====================== */
@@ -88,7 +94,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 17px 0px;
+    padding: 16px 0px;
 }
 
 .logo img {
