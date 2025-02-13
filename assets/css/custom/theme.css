@@ -110,7 +110,7 @@ a {
 	content: "";
 	height: 20px;
 	background-color: var(--lime-green-200, #B4DFAA);
-	bottom: 15px;
+	bottom: 11px;
 	width: calc(100% + 15px);
 	left: -5px;
 	z-index: -1;
@@ -120,17 +120,25 @@ a {
 .body-text {
     color: var(--base-700, #414141);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.4em;
     letter-spacing: -0.9px;
 }
 
-.heading-18 {
+.heading-tiny {
     font-size: 18px;
     font-weight: 700;
     color: var(--base-800, #292929);
     letter-spacing: -0.9px;
     margin: 0;
+}
+
+.heading-medium {
+    color: var(--deep-green-500, #006341);
+    font-size: 20px;
+    letter-spacing: -1.1px;
+    margin: 0;
+    font-weight: 700;
 }
 
 @media (min-width: 1400px) {
@@ -141,8 +149,9 @@ a {
 
 @media only screen and (min-width: 62em) {
     .heading-text {
-        font-size: 68px;
+        font-size: 60px;
         letter-spacing: -5px;
+        line-height: 1.1;
     }
 }
 
@@ -375,6 +384,23 @@ a {
     right: -17px;
 	margin: 0 !important;
 }
+
+.banner-heading {
+    color: var(--deep-green-800, #003221);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+
+@media only screen and (min-width: 62em) {
+    .banner-heading {
+        font-size: 68px;
+        letter-spacing: -5px;
+        line-height: 1.1;
+    }
+}
+
 /* ====================== End: Hero Section ====================== */
 
 /* ====================== Start: Brands ====================== */
@@ -382,7 +408,7 @@ a {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-    margin-top: 35px;
+    margin-top: 32px;
 }
 
 .company-name {
@@ -393,3 +419,52 @@ a {
     margin: 0;
 }
 /* ====================== End: Brands ====================== */
+
+/* ====================== Start: About ====================== */
+.about-boxes {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	gap: 18px;
+	align-self: stretch;
+	flex-wrap: wrap;
+}
+
+.about-box {
+	display: flex;
+	padding: 12px 30px 12px 16px;
+	align-items: center;
+	gap: 14px;
+	border-radius: 40px;
+	border: 1px solid var(--base-300, #CFCFCF);
+	background: var(--base-100, #FFF);
+}
+
+.about-icon {
+	border-radius: 40px;
+	background: var(--accent, #DEFE7F);
+	min-width: 75px;
+	width: 75px;
+	min-height: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	padding: 0 13px;
+}
+
+.about-head {
+    color: var(--lime-green-500, #43B02A);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    margin: 0;
+}
+
+.about-desc {
+    color: var(--base-900, #111);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    margin: 0;
+}
+/* ====================== End: About ====================== */
