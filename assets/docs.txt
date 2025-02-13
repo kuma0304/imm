@@ -1,0 +1,3 @@
+Bootstrap v5.3.3 (https://getbootstrap.com/)
+jQuery v3.7.1
+Owl Carousel v2.3.4

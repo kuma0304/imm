@@ -6,25 +6,77 @@
     <meta name="description" content="Interactive Media Management - Algonquin College">
     <meta name="author" content="">
 	<title>Home | Interactive Media Management</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom/theme.css">
 </head>
 <body>
-    <h1>Interactive Media Management</h1>
+    <!-- Header: Logo, Menu, Hamburger etc. -->
+    <header>
+        <section class="header">
+            <div class="container">
+                <div class="main-header">
+                    <div class="logo d-inline-flex">
+                        <a href="index.html" class="d-inline-flex">
+                            <img src="assets/images/logo-imm.png" alt="Interactive Media Management Logo">
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <nav>
+                            <div class="main-menu">
+                                <div class="close-menu">
+                                    <a href="#" onclick="mobileNavigationOff()">
+                                        <span class="material-symbols-outlined">
+                                            close
+                                            </span>
+                                    </a>
+                                </div>
+                                <ul class="no-style-list p-0 m-0">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="articles.html">Articles</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-icons">
+                                <div class="hamburger">
+                                    <a href="#" onclick="mobileNavigationOn()"><span class="material-symbols-outlined">
+                                        menu
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="join ps-2 d-none d-lg-block">
+                                    <a href="contact-us.html" class="theme-button fw-normal">Join Now</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Main: All the main content is here -->
+     <main>
+        <h1>Home Page</h1>
+     </main>
     <!-- jquery -->
-    <script src="assets/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script> 
     <!-- Owl Carousel JS -->
     <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
-        });
-    </script>
-
+    <!-- Custom JS -->
+    <script src="assets/js/custom/theme.js"></script>
 </body>
 </html>

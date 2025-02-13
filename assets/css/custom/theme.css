@@ -1,0 +1,220 @@
+/* ====================== Start: Variables ====================== */
+:root {
+    --primary-color: #006341;
+    --primary-hover-color: #006341;
+    --gray-color: #333;
+    --light-gray: #eff2f7;
+}
+
+/* ====================== End: Variables ====================== */
+
+
+/* ====================== Start: Global Style ====================== */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-image: url("../../../assets/images/main-bg-grid.png");
+	background-size: auto;
+	background-repeat: repeat;
+	background-position: center bottom;
+	height: 3000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-style-list {
+    list-style: none;
+}
+
+.theme-button {
+    background-color: var(--primary-color);
+    min-width: 135px;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 4px;
+}  
+
+.theme-button:hover {
+    background-color: var(--primary-hover-color);
+}  
+
+.heading-text {
+    font-size: 1.56em;
+    color: var(--gray-color);
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.body-text {
+    line-height: 1.2;
+    font-size: 1em;
+    color: var(--gray-color);
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 62em) {
+    .heading-text {
+        font-size: 2.18em;
+    }
+}
+
+/* ====================== End: Global Style ====================== */
+
+/* ====================== Start: Header ====================== */
+.header {
+    border-radius: 200px;
+    border: 1px solid #CFCFCF;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.12);
+    margin: 20px auto 0;
+    max-width: 1350px;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0px;
+}
+
+.logo img {
+	max-height: 50px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons .hamburger a {
+    color: var(--gray-color);
+    font-size: 24px;
+}
+
+.header-icons .hamburger:hover {
+    opacity: 0.8;
+}
+
+.header-icons .cart:hover {
+    opacity: 0.8;
+}
+
+.mobile-menu-active .main-menu {
+    left: 0;
+}
+
+.main-menu {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    left: -110%;
+    top: 0;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    -ms-transition: all 500ms;
+}
+
+.main-menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-menu ul li {
+    width: 100%;
+}
+
+.main-menu ul li a {
+    width: 100%;
+    display: inline-block;
+    background-color: var(--light-gray);
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    white-space: nowrap;
+}
+
+.main-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+.close-menu {
+    text-align: right;
+    padding: 20px 15px;
+}
+
+.close-menu a {
+    font-size: 20px;
+    color: var(--gray-color);
+}
+
+.close-menu a:hover,
+.close-menu a:focus {
+    color: var(--primary-color);
+}
+
+
+@media only screen and (min-width: 62em) {
+    .hamburger {
+        display: none;
+    }
+
+    .main-menu {
+        height: inherit;
+        width: inherit;
+        position: relative;
+        z-index: 1;
+        background-color: inherit;
+        left: inherit;
+        top: inherit;
+        margin-right: 19px;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .main-menu ul {
+        flex-direction: row;
+    }
+
+    .main-menu ul li a {
+        background-color: #fff;
+        padding: 6px 0;
+        border-bottom: none;
+    }
+
+    .main-menu ul li {        
+        margin-right: 30px;
+    }
+
+    .main-menu ul li:last-child {
+        margin-right: 15px;
+    }
+
+    .navigation nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* ====================== End: Header ====================== */
