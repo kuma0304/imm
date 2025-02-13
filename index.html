@@ -1,3 +1,10 @@
+<!--                                                                     
+  ___  __  __  __  __ 
+ |_ _||  \/  ||  \/  |
+  | ||| |\/| || |\/| |
+  | ||| |  | || |  | |
+ |___||_|  |_||_|  |_|  
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +13,11 @@
     <meta name="description" content="Interactive Media Management - Algonquin College">
     <meta name="author" content="">
 	<title>Home | Interactive Media Management</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -21,54 +29,159 @@
     <link rel="stylesheet" href="assets/css/custom/theme.css">
 </head>
 <body>
+
     <!-- Header: Logo, Menu, Hamburger etc. -->
     <header>
-        <section class="header">
+        <section class="">
             <div class="container">
-                <div class="main-header">
-                    <div class="logo d-inline-flex">
-                        <a href="index.html" class="d-inline-flex">
-                            <img src="assets/images/logo-imm.png" alt="Interactive Media Management Logo">
-                        </a>
-                    </div>
-                    <div class="navigation">
-                        <nav>
-                            <div class="main-menu">
-                                <div class="close-menu">
-                                    <a href="#" onclick="mobileNavigationOff()">
-                                        <span class="material-symbols-outlined">
-                                            close
-                                            </span>
-                                    </a>
+                <div class="header">
+                    <div class="main-header">
+                        <div class="logo d-inline-flex">
+                            <a href="index.html" class="d-inline-flex">
+                                <img src="assets/images/logo-imm.png" alt="Interactive Media Management Logo">
+                            </a>
+                        </div>
+                        <div class="navigation">
+                            <nav>
+                                <div class="main-menu">
+                                    <div class="close-menu">
+                                        <a href="#" onclick="mobileNavigationOff()">
+                                            <span class="material-symbols-outlined">
+                                                close
+                                                </span>
+                                        </a>
+                                    </div>
+                                    <ul class="no-style-list p-0 m-0">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="career.html">Career</a></li>
+                                    </ul>
                                 </div>
-                                <ul class="no-style-list p-0 m-0">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="articles.html">Articles</a></li>
-                                    <li><a href="events.html">Events</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-icons">
+                            <div class="hamburger">
+                                <a href="#" onclick="mobileNavigationOn()"><span class="material-symbols-outlined">
+                                    menu
+                                    </span>
+                                </a>
                             </div>
-                            <div class="header-icons">
-                                <div class="hamburger">
-                                    <a href="#" onclick="mobileNavigationOn()"><span class="material-symbols-outlined">
-                                        menu
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="join ps-2 d-none d-lg-block">
-                                    <a href="contact-us.html" class="theme-button fw-normal">Join Now</a>
-                                </div>
+                            <div class="join ps-2 d-none d-lg-block">
+                                <a href="contact-us.html" class="theme-button black">
+                                    <span class="theme-button-text">Apply Now</span>
+                                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                                </a>
                             </div>
-                        </nav>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </header>
-    <!-- Main: All the main content is here -->
+    <!-- Main -->
      <main>
-        <h1>Home Page</h1>
+        <section class="">
+            <div class="container">
+                <div class="row align-items-center my-5">
+                    <div class="col-md-7">
+                        <div class="hero-text">
+                            <span class="banner-highlights">BUILD A SOLID FOUNDATION FOR TODAY'S MARKET</span>
+                            <h1 class="heading-text mt-2 pt-1">Learn, Create, and Lead in <span class="heading-text-highlight">Interactive Media</span></h1>
+                            <p class="body-text">Advance your skills in interactive media and design; build a solid foundation for today's global job market.</p>
+                            <div class="d-flex mt-5">                           
+                                <a href="javascript:;" class="theme-button black me-3">
+                                    <span class="theme-button-text">Apply Now</span>
+                                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                                </a>
+                                <a href="javascript:;" class="theme-button white">
+                                    <span class="theme-button-text">Know More</span>
+                                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="hero-slider">
+                            <div class="owl-carousel owl-theme hero-owl">
+                                <div class="item">
+                                    <div class="hero-slider-image" style="background-image: url('assets/images/photography.jpg');">
+                                        <h2 class="hero-slider-text">PHOTOGRAPHY</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="hero-slider-image" style="background-image: url('assets/images/photography.jpg');">
+                                        <h2 class="hero-slider-text">WEB</h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="hero-slider-image" style="background-image: url('assets/images/photography.jpg');">
+                                        <h2 class="hero-slider-text">MOTION</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="">
+                    <h3 class="heading-18">BRAND WE'VE COLLABORATED WITH</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="company-box">
+                            <div class="company-image">
+                                <img src="assets/images/company-logo.png" alt="Company 1" class="img-fluid">
+                            </div>
+                            <h3 class="company-name">Client Name</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
      </main>
     <!-- jquery -->
     <script src="assets/js/jquery/jquery.min.js"></script>

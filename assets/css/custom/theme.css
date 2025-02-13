@@ -1,15 +1,31 @@
 /* ====================== Start: Variables ====================== */
 :root {
     --accent: #DEFE7F;
+    --primary: #006341;
+    --secondary: #00703C;
     --background: #F8F8F8;
-
-
-
-    --primary-color: #006341;
-    --primary-hover-color: #006341;
-    --gray-color: #333;
-    --light-gray: #eff2f7;
+    --black: #000000;
     
+    --base-100: #FFFFFF;
+    --base-300: #CFCFCF;
+    --base-400: #B8B8B8;
+    --base-700: #414141;
+    --base-800: #292929;
+    --base-900: #111111;
+    
+    --deep-green-100: #CCE0D9;
+    --deep-green-300: #66A18D;
+    --deep-green-400: #338267;
+    --deep-green-500: #006341;
+    --deep-green-600: #004F34;
+    --deep-green-800: #003221;
+    
+    --lime-green-100: #D9EFD4;
+    --lime-green-200: #B4DFAA;
+    --lime-green-300: #8ED07F;
+    --lime-green-400: #69C055;
+    --lime-green-500: #43B02A;
+    --lime-green-600: #368D22;    
 }
 
 /* ====================== End: Variables ====================== */
@@ -17,7 +33,7 @@
 
 /* ====================== Start: Global Style ====================== */
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -26,6 +42,7 @@ body {
 	background-repeat: repeat;
 	background-position: center bottom;
 	height: 3000px;
+    font-size: 16px;
 }
 
 a {
@@ -37,45 +54,95 @@ a {
 }
 
 .theme-button {
-    background-color: var(--primary-color);
-    min-width: 135px;
-    min-height: 38px;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    padding: 16px 28px;
     justify-content: center;
-    padding: 8px 30px;
-    color: #fff;
-    border-radius: 4px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    
 }  
 
-.theme-button:hover {
-    background-color: var(--primary-hover-color);
+.theme-button.black {    
+    background-color: var(--base-900, #111); 
+    color: var(--base-100, #fff);
+    border: 1px solid  var(--base-900, #111);
+}
+
+.theme-button.black:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}  
+
+.theme-button.white {    
+    border: 1px solid var(--base-300, #CFCFCF);
+    background: var(--base-100, #FFF);
+    color: var(--base-900, #111);
+}
+
+.theme-button.white:hover {
+    color: var(--base-100, #fff);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }  
 
 .heading-text {
-    font-size: 1.56em;
-    color: var(--gray-color);
-    margin-bottom: 0;
+    color: var(--deep-green-800, #003221);
+    font-size: 30px;
     font-weight: 700;
+    line-height: 1.2em;
+}
+
+.heading-text-highlight {
+    position: relative;    
+    display: inline-flex;
+}
+
+.heading-text-highlight::before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	background-color: var(--lime-green-200, #B4DFAA);
+	bottom: 15px;
+	width: calc(100% + 15px);
+	left: -5px;
+	z-index: -1;
+	border-radius: 50px;
 }
 
 .body-text {
-    line-height: 1.2;
-    font-size: 1em;
-    color: var(--gray-color);
-    margin-bottom: 0;
+    color: var(--base-700, #414141);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+    letter-spacing: -0.9px;
 }
 
+.heading-18 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--base-800, #292929);
+    letter-spacing: -0.9px;
+    margin: 0;
+}
 
 @media (min-width: 1400px) {
     .container {
-        max-width: 1280px;
+        max-width: 1304px;
     }
 }
 
 @media only screen and (min-width: 62em) {
     .heading-text {
-        font-size: 2.18em;
+        font-size: 68px;
+        letter-spacing: -5px;
     }
 }
 
@@ -83,22 +150,23 @@ a {
 
 /* ====================== Start: Header ====================== */
 .header {
-    border-radius: 200px;
+    border-radius: 50px;
     border: 1px solid #CFCFCF;
     background-color: #ffffff;
     box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.12);
     margin: 20px auto 0;
-    max-width: 1350px;
+    padding: 0 20px;
 }
+
 .main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0px;
+    padding: 13px 0px;
 }
 
 .logo img {
-	max-height: 50px;
+	max-height: 30px;
 }
 
 .header-icons {
@@ -108,8 +176,12 @@ a {
 }
 
 .header-icons .hamburger a {
-    color: var(--gray-color);
-    font-size: 24px;
+	color: var(--black);
+	display: flex;
+}
+
+.header-icons .hamburger a span {
+	font-size: 35px;
 }
 
 .header-icons .hamburger:hover {
@@ -152,15 +224,16 @@ a {
 .main-menu ul li a {
     width: 100%;
     display: inline-block;
-    background-color: var(--light-gray);
     padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
-    color: #000;
+    border-bottom: 1px solid #ddd;    
+    color: var(--base-700, #414141);
     white-space: nowrap;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .main-menu ul li a:hover {
-    color: var(--primary-color);
+    color: var(--lime-green-500, #43B02A);
 }
 
 .close-menu {
@@ -170,12 +243,12 @@ a {
 
 .close-menu a {
     font-size: 20px;
-    color: var(--gray-color);
+    color: var(--black);
 }
 
 .close-menu a:hover,
 .close-menu a:focus {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 
@@ -204,23 +277,119 @@ a {
     }
 
     .main-menu ul li a {
-        background-color: #fff;
-        padding: 6px 0;
+        padding: 2px;
         border-bottom: none;
     }
 
     .main-menu ul li {        
-        margin-right: 30px;
+        margin-right: 40px;
     }
 
     .main-menu ul li:last-child {
-        margin-right: 15px;
+        margin-right: 0;
     }
 
     .navigation nav {
         display: flex;
         align-items: center;
     }
+    
+    .logo img {
+        max-height: 50px;
+    }
+
+    .header {
+        padding: 0 19px 0 31px;
+    }
 }
 
 /* ====================== End: Header ====================== */
+
+/* ====================== Start: Hero Section ====================== */
+.banner-highlights {
+    border-radius: 50px;
+    background: var(--accent, #DEFE7F);
+    padding: 6px 20px;
+    color: var(--deep-green-500, #006341);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-slider-image {
+	border-radius: 180px 30px 30px 30px;
+	border: 13px solid #EBEBEB;
+	height: 428px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 23px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-slider-text {
+	color: var(--deep-green-500, #006341);
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	border-radius: 100px;
+	border: 5px solid var(--base-300, #CFCFCF);
+	background: var(--base-100, #FFF);
+	padding: 8px 17px;
+    margin: 0 0 -29px;
+}
+
+.owl-nav button {
+	height: 45px;
+	width: 45px;
+    border-radius: 50px !important;
+    border: 5px solid var(--base-300, #CFCFCF) !important;
+    background: var(--base-100, #FFF) !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.owl-nav button span {
+	color: var(--deep-green-500, #006341);
+	font-size: 35px;
+	line-height: 0.7;
+	font-weight: 500;
+}
+
+
+.hero-slider .owl-nav .owl-prev {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+    left: -17px;
+	margin: 0 !important;
+}
+
+.hero-slider .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+    right: -17px;
+	margin: 0 !important;
+}
+/* ====================== End: Hero Section ====================== */
+
+/* ====================== Start: Brands ====================== */
+.company-box {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+    margin-top: 35px;
+}
+
+.company-name {
+    color: var(--base-900, #111);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.99px;
+    margin: 0;
+}
+/* ====================== End: Brands ====================== */
