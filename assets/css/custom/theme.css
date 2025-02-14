@@ -41,8 +41,27 @@ body {
 	background-size: auto;
 	background-repeat: repeat;
 	background-position: center bottom;
-	height: 3000px;
     font-size: 16px;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--lime-green-500, #43B02A);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: red;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--lime-green-500, #43B02A) var(--base-200, #E7E7E7);
 }
 
 a {
@@ -139,6 +158,22 @@ a {
     letter-spacing: -1.1px;
     margin: 0;
     font-weight: 700;
+}
+
+.theme-tag {    
+	color: var(--deep-green-500, #006341);
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	border-radius: 100px;
+	border: 5px solid var(--base-300, #CFCFCF);
+	background: var(--base-100, #FFF);
+	padding: 4px 17px;
+    min-height: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 1400px) {
@@ -338,14 +373,6 @@ a {
 }
 
 .hero-slider-text {
-	color: var(--deep-green-500, #006341);
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: -1px;
-	border-radius: 100px;
-	border: 5px solid var(--base-300, #CFCFCF);
-	background: var(--base-100, #FFF);
-	padding: 8px 17px;
     margin: 0 0 -29px;
 }
 
@@ -469,53 +496,147 @@ a {
 }
 /* ====================== End: About ====================== */
 
+/* ====================== Start: Skills ====================== */
+
 .left-panel {
-    width: 300px;
+    width: 100%;
 }
 
 .right-panel {
     flex: 1;
+    border-radius: 20px;
+    border: 1px solid var(--base-300, #CFCFCF);
+    background: var(--base-100, #FFF);
+    display: flex;
+    padding: 23px 20px;
+    align-items: flex-start;
 }
 
 .accordion-box {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 20px;
+    border: 1px solid var(--base-300, #CFCFCF);
+    background: var(--base-100, #FFF);  
+    overflow: hidden;
+    margin-bottom: 12px;
 }
 
 .accordion-header {
-    background: #f8f9fa;
-    padding: 15px;
+    padding: 25px 30px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.accordion-header.active {
-    background: #e9ecef;
+.accordion-header:not(.active):hover {
+    background: var(--lime-green-100, #D9EFD4);  
+}
+
+.accordion-heading {    
+    color: var(--deep-green-500, #006341);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin: 0;
 }
 
 .accordion-content {
-    padding: 15px;
+    padding: 0 30px 20px 30px;
+    display: none;
+    margin-top: -17px;
+}
+
+.arrow span {
+    color: var(--deep-green-500, #006341);
+    font-size: 22px;
+}
+
+.right-panel .tab-content {
+    display: none;
+    width: 100%;
+}
+
+.right-panel .tab-content.active {
+	display: block;
+	max-height: 386px;
+	overflow-y: auto;
+	padding: 0 20px;
+}
+
+.course-icon {
+    border-radius: 13px;
+    background: var(--accent, #DEFE7F);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-icon span{
+    font-size: 40px;
+    color: var(--deep-green-500, #006341);
+}
+
+.course-heading {
+    color: var(--deep-green-500, #006341);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.28px;
+    margin: 0;
+}
+
+.course-box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.course-box-wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom: 1px solid var(--base-300, #CFCFCF);
+}
+
+.course-box-wrap:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.course-box-wrap:first-child {
+    padding-top: 0;
+}
+
+.course-box-tags {
+	display: inline-flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.course-tag {
+    position: relative;
+}
+
+.course-tag::before {
+	content: "";
+	width: 1px;
+	height: 34px;
+	background-color: var(--base-300, #CFCFCF);
+	position: absolute;
+	right: -18px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.course-tag:last-child::before {
     display: none;
 }
-
-.arrow {
-    transition: transform 0.3s;
-}
-
-.active .arrow {
-    transform: rotate(180deg);
-}
-
-.tab-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.tab-content.active {
-    display: block;
-}
+/* ====================== End: Skills ====================== */
