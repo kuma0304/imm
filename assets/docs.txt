@@ -2,7 +2,10 @@ Bootstrap v5.3.3 (https://getbootstrap.com/)
 jQuery v3.7.1
 Owl Carousel v2.3.4
 https://fonts.google.com/specimen/Open+Sans
+https://fonts.google.com/icons
 
 
 Images
 https://pixabay.com/photos/photography-studio-photo-shoot-1850469/
+https://pixabay.com/photos/technology-computer-code-javascript-1283624/
+https://pixabay.com/photos/cat-vector-abstract-drawing-2011427/
