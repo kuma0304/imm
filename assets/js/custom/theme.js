@@ -8,7 +8,7 @@ function mobileNavigationOff() {
     body.classList.remove('mobile-menu-active');
 }
 
-// Owl Carousel
+// Banner Owl Carousel
 $('.hero-owl').owlCarousel({
     loop:true,
     margin:10,
@@ -24,6 +24,27 @@ $('.hero-owl').owlCarousel({
     }
 })
 
+// Testimonials Owl Carousel
+$('.testimonials-owl').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            items: 1
+        }
+    },
+    navText: [
+        '<span class="material-symbols-outlined">arrow_left_alt</span>', 
+        '<span class="material-symbols-outlined">arrow_right_alt</span>'
+    ]
+});
+
+// Custom Accordion and Tabs
 $(document).ready(function() {
     // Handle accordion header clicks
     $('.accordion-header').click(function() {
