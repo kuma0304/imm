@@ -327,7 +327,6 @@ a {
     color: var(--primary);
 }
 
-
 @media only screen and (min-width: 62em) {
     .hamburger {
         display: none;
@@ -452,9 +451,15 @@ a {
 }
 
 
-@media only screen and (min-width: 62em) {
+@media (min-width: 1400px) {
     .banner-heading {
         font-size: 68px;
+    }
+}
+
+@media only screen and (min-width: 62em) {
+    .banner-heading {
+        font-size: 63px;
         letter-spacing: -5px;
         line-height: 1.1;
     }
