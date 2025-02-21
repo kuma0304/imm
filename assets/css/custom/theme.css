@@ -128,7 +128,7 @@ a {
 	content: "";
 	height: 15px;
 	background-color: var(--lime-green-200);
-	bottom: 6px;
+	bottom: 5px;
 	width: calc(100% + 15px);
 	left: -5px;
 	z-index: -1;
@@ -212,15 +212,9 @@ a {
 
 @media only screen and (min-width: 36em) {    
     .theme-button {
-        padding: 16px 28px;
-        font-size: 16px;
+        padding: 16px 24px;
+        font-size: 15px;
     }  
-    
-    .heading-text-highlight::before {
-        height: 20px;
-        bottom: 11px;
-    }
-
 }
 
 @media only screen and (min-width: 62em) {
@@ -229,11 +223,29 @@ a {
         letter-spacing: -5px;
         line-height: 1.1;
     }
+    .theme-button {
+        padding: 16px 28px;
+        font-size: 16px;
+    }  
+    .heading-text-highlight::before {
+        height: 18px;
+        bottom: 9px;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .heading-text-highlight::before {
+        bottom: 11px;
+    }
 }
 
 @media only screen and (min-width: 87.5em) {
     .container {
         max-width: 1304px;
+    }
+    .heading-text-highlight::before {
+        height: 20px;
+        bottom: 11px;
     }
 }
 
@@ -461,17 +473,22 @@ a {
 
 .banner-heading {
     color: var(--deep-green-800);
-    font-size: 44px;
+	font-size: 29px;
     font-weight: 700;
-    line-height: 1em;
+	line-height: 1.5em;
     letter-spacing: -2.2px;
 }
+
 
 @media only screen and (min-width: 36em) {   
     .banner-highlights {
         padding: 6px 20px;
         font-size: 16px;
     }  
+    .banner-heading {
+        font-size: 44px;
+        line-height: 1em;
+    }
 }    
 
 @media only screen and (min-width: 48em) { 
@@ -481,7 +498,7 @@ a {
     }   
     .banner-highlights {
         font-size: 16px;
-    } 
+    }   
 }    
 
 @media only screen and (min-width: 62em) {
@@ -507,6 +524,11 @@ a {
     } 
 }
 
+@media only screen and (max-width: 35.99em) {
+    .banner-heading .heading-text-highlight {
+        font-size: 44px;
+    }
+}
 /* ====================== End: Hero Section ====================== */
 
 /* ====================== Start: Brands ====================== */
