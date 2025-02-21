@@ -41,7 +41,7 @@ body {
 	background-repeat: repeat;
 	background-position: center bottom;
     font-size: 16px;
-    background-color: var(--background, #F8F8F8);
+    background-color: var(--background);
 }
 
 /* For WebKit browsers (Chrome, Safari) */
@@ -50,7 +50,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--lime-green-500, #43B02A);
+    background-color: var(--lime-green-500);
     border-radius: 5px;
 }
 
@@ -61,7 +61,7 @@ body {
 /* For Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--lime-green-500, #43B02A) var(--base-200, #E7E7E7);
+    scrollbar-color: var(--lime-green-500) var(--base-200);
 }
 
 a {
@@ -88,9 +88,9 @@ a {
 }  
 
 .theme-button.black {    
-    background-color: var(--base-900, #111); 
-    color: var(--base-100, #fff);
-    border: 1px solid  var(--base-900, #111);
+    background-color: var(--base-900); 
+    color: var(--base-100);
+    border: 1px solid  var(--base-900);
 }
 
 .theme-button.black:hover {
@@ -99,19 +99,19 @@ a {
 }  
 
 .theme-button.white {    
-    border: 1px solid var(--base-300, #CFCFCF);
-    background: var(--base-100, #FFF);
-    color: var(--base-900, #111);
+    border: 1px solid var(--base-300);
+    background: var(--base-100);
+    color: var(--base-900);
 }
 
 .theme-button.white:hover {
-    color: var(--base-100, #fff);
+    color: var(--base-100);
     background-color: var(--secondary);
     border-color: var(--secondary);
 }  
 
 .heading-text {
-    color: var(--deep-green-800, #003221);
+    color: var(--deep-green-800);
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2em;
@@ -127,7 +127,7 @@ a {
 	position: absolute;
 	content: "";
 	height: 15px;
-	background-color: var(--lime-green-200, #B4DFAA);
+	background-color: var(--lime-green-200);
 	bottom: 6px;
 	width: calc(100% + 15px);
 	left: -5px;
@@ -136,7 +136,7 @@ a {
 }
 
 .body-text {
-    color: var(--base-700, #414141);
+    color: var(--base-700);
     font-size: 18px;
     font-weight: 500;
     line-height: 1.4em;
@@ -146,13 +146,13 @@ a {
 .heading-tiny {
     font-size: 18px;
     font-weight: 700;
-    color: var(--base-800, #292929);
+    color: var(--base-800);
     letter-spacing: -0.9px;
     margin: 0;
 }
 
 .heading-medium {
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
     font-size: 20px;
     letter-spacing: -1.1px;
     margin: 0;
@@ -160,13 +160,13 @@ a {
 }
 
 .theme-tag {    
-	color: var(--deep-green-500, #006341);
+	color: var(--deep-green-500);
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: -1px;
 	border-radius: 100px;
-	border: 5px solid var(--base-300, #CFCFCF);
-	background: var(--base-100, #FFF);
+	border: 5px solid var(--base-300);
+	background: var(--base-100);
 	padding: 4px 17px;
     min-height: 50px;
     height: 50px;
@@ -184,8 +184,8 @@ a {
 
 .theme-arrow .owl-nav > button[type="button"] {
     border-radius: 40px;
-    border: 1px solid var(--base-300, #CFCFCF) !important;
-    background-color: var(--base-100, #FFF);
+    border: 1px solid var(--base-300) !important;
+    background-color: var(--base-100);
     display: flex;
     padding: 0 !important;
     justify-content: center;
@@ -205,8 +205,8 @@ a {
 }
 
 .theme-arrow .owl-nav > button:hover {
-    background-color: var(--lime-green-500, #43B02A) !important;
-    border: 1px solid var(--lime-green-500, #43B02A) !important;
+    background-color: var(--lime-green-500) !important;
+    border: 1px solid var(--lime-green-500) !important;
 }
 
 
@@ -317,14 +317,14 @@ a {
     display: inline-block;
     padding: 12px 15px;
     border-bottom: 1px solid #ddd;    
-    color: var(--base-700, #414141);
+    color: var(--base-700);
     white-space: nowrap;
     font-weight: 700;
     font-size: 16px;
 }
 
 .main-menu ul li a:hover {
-    color: var(--lime-green-500, #43B02A);
+    color: var(--lime-green-500);
 }
 
 .close-menu {
@@ -398,9 +398,9 @@ a {
 /* ====================== Start: Hero Section ====================== */
 .banner-highlights {
     border-radius: 50px;
-    background: var(--accent, #DEFE7F);
+    background: var(--accent);
     padding: 6px 10px;
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
     font-size: 13px;
     font-weight: 700;
     display: inline-flex;
@@ -427,8 +427,8 @@ a {
 	height: 45px;
 	width: 45px;
     border-radius: 50px !important;
-    border: 5px solid var(--base-300, #CFCFCF) !important;
-    background: var(--base-100, #FFF) !important;
+    border: 5px solid var(--base-300) !important;
+    background: var(--base-100) !important;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -436,7 +436,7 @@ a {
 }
 
 .hero-slider .owl-nav button span {
-	color: var(--deep-green-500, #006341);
+	color: var(--deep-green-500);
 	font-size: 35px;
 	line-height: 0.7;
 	font-weight: 500;
@@ -460,7 +460,7 @@ a {
 }
 
 .banner-heading {
-    color: var(--deep-green-800, #003221);
+    color: var(--deep-green-800);
     font-size: 44px;
     font-weight: 700;
     line-height: 1em;
@@ -518,7 +518,7 @@ a {
 }
 
 .company-name {
-    color: var(--base-900, #111);
+    color: var(--base-900);
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.99px;
@@ -542,13 +542,13 @@ a {
 	align-items: center;
 	gap: 14px;
 	border-radius: 40px;
-	border: 1px solid var(--base-300, #CFCFCF);
-	background: var(--base-100, #FFF);
+	border: 1px solid var(--base-300);
+	background: var(--base-100);
 }
 
 .about-icon {
 	border-radius: 40px;
-	background: var(--accent, #DEFE7F);
+	background: var(--accent);
 	min-width: 75px;
 	width: 75px;
 	min-height: 44px;
@@ -559,7 +559,7 @@ a {
 }
 
 .about-head {
-    color: var(--lime-green-500, #43B02A);
+    color: var(--lime-green-500);
     font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.9px;
@@ -567,7 +567,7 @@ a {
 }
 
 .about-desc {
-    color: var(--base-900, #111);
+    color: var(--base-900);
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.9px;
@@ -584,8 +584,8 @@ a {
 .right-panel {
     flex: 1;
     border-radius: 20px;
-    border: 1px solid var(--base-300, #CFCFCF);
-    background: var(--base-100, #FFF);
+    border: 1px solid var(--base-300);
+    background: var(--base-100);
     display: flex;
     padding: 23px 20px;
     align-items: flex-start;
@@ -593,8 +593,8 @@ a {
 
 .left-panel .accordion-box {
     border-radius: 20px;
-    border: 1px solid var(--base-300, #CFCFCF);
-    background: var(--base-100, #FFF);  
+    border: 1px solid var(--base-300);
+    background: var(--base-100);  
     overflow: hidden;
     margin-bottom: 12px;
 }
@@ -616,11 +616,11 @@ a {
 }
 
 .left-panel .accordion-header:not(.active):hover {
-    background: var(--lime-green-100, #D9EFD4);  
+    background: var(--lime-green-100);  
 }
 
 .left-panel .accordion-heading {    
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.96px;
@@ -634,7 +634,7 @@ a {
 }
 
 .arrow span {
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
     font-size: 22px;
 }
 
@@ -652,7 +652,7 @@ a {
 
 .course-icon {
     border-radius: 13px;
-    background: var(--accent, #DEFE7F);
+    background: var(--accent);
     height: 60px;
     width: 60px;
     display: flex;
@@ -662,11 +662,11 @@ a {
 
 .course-icon span{
     font-size: 40px;
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
 }
 
 .course-heading {
-    color: var(--deep-green-500, #006341);
+    color: var(--deep-green-500);
     font-size: 30px;
     font-weight: 700;
     letter-spacing: -1.28px;
@@ -686,7 +686,7 @@ a {
 	align-items: center;
     padding-bottom: 12px;
     padding-top: 12px;
-    border-bottom: 1px solid var(--base-300, #CFCFCF);
+    border-bottom: 1px solid var(--base-300);
 }
 
 .course-box-wrap:last-child {
@@ -712,7 +712,7 @@ a {
 	content: "";
 	width: 1px;
 	height: 34px;
-	background-color: var(--base-300, #CFCFCF);
+	background-color: var(--base-300);
 	position: absolute;
 	right: -18px;
 	top: 50%;
@@ -727,8 +727,8 @@ a {
 /* ====================== Start: Testimonials ====================== */
 .testimonials-box {
     border-radius: 32px;
-    border: 1px solid var(--base-300, #CFCFCF);
-    background: var(--base-100, #FFF);
+    border: 1px solid var(--base-300);
+    background: var(--base-100);
     padding: 40px;
 }
 
@@ -771,7 +771,7 @@ a {
 
 /* ====================== Start: CTA ====================== */
 .cta-heading-text {
-    color: var(--deep-green-600, #004F34);
+    color: var(--deep-green-600);
     font-size: 52px;
     font-weight: 700;
     line-height: 1.2;
@@ -781,8 +781,8 @@ a {
 
 .cta-wrap {
     border-radius: 20px;
-    border: 1px solid var(--base-300, #CFCFCF);
-    background: var(--base-100, #FFF);
+    border: 1px solid var(--base-300);
+    background: var(--base-100);
     padding: 34px 50px;
     background-image: url("../../../assets/images/cta-bg.png");
     background-position: center;
@@ -797,7 +797,7 @@ a {
 
 /* ====================== Start: Footer ====================== */
 .footer {
-    background-color: var(--deep-green-600, #004F34);
+    background-color: var(--deep-green-600);
 }
 
 .footer-social {
@@ -836,7 +836,7 @@ a {
 
 .footer-bottom-text {
     margin: 0;
-    color: var(--lime-green-100, #D9EFD4);
+    color: var(--lime-green-100);
     font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.36px;
