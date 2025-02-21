@@ -341,11 +341,15 @@ a {
 
 .close-menu {
     text-align: right;
-    padding: 33px 33px 0;
+    padding: 0;
 }
 
 .close-menu a {
-    color: var(--black);
+	color: var(--black);
+	display: inline-flex;
+	position: relative;
+	left: 47px;
+	top: 33px;
 }
 
 .close-menu a span {
