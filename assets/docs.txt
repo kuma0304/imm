@@ -9,3 +9,39 @@ Images
 https://pixabay.com/photos/photography-studio-photo-shoot-1850469/
 https://pixabay.com/photos/technology-computer-code-javascript-1283624/
 https://pixabay.com/photos/cat-vector-abstract-drawing-2011427/
+
+
+/* Small (sm) screens and up (>=576px or 36em) */
+@media (min-width: 36em) {
+  .custom-class {
+    background-color: lightblue;
+  }
+}
+
+/* Medium (md) screens and up (>=768px or 48em) */
+@media (min-width: 48em) {
+  .custom-class {
+    background-color: lightgreen;
+  }
+}
+
+/* Large (lg) screens and up (>=992px or 62em) */
+@media (min-width: 62em) {
+  .custom-class {
+    background-color: orange;
+  }
+}
+
+/* Extra Large (xl) screens and up (>=1200px or 75em) */
+@media (min-width: 75em) {
+  .custom-class {
+    background-color: pink;
+  }
+}
+
+/* XXL screens and up (>=1400px or 87.5em) */
+@media (min-width: 87.5em) {
+  .custom-class {
+    background-color: purple;
+  }
+}

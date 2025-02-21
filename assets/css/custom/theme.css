@@ -384,10 +384,11 @@ a {
 .banner-highlights {
     border-radius: 50px;
     background: var(--accent, #DEFE7F);
-    padding: 6px 20px;
+    padding: 6px 10px;
     color: var(--deep-green-500, #006341);
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 700;
+    display: inline-flex;
 }
 
 .hero-slider-image {
@@ -450,10 +451,10 @@ a {
     line-height: 1.2em;
 }
 
-
-@media (min-width: 1400px) {
-    .banner-heading {
-        font-size: 68px;
+@media only screen and (min-width: 36em) {    
+    .banner-highlights {
+        padding: 6px 20px;
+        font-size: 20px;
     }
 }
 
@@ -462,6 +463,12 @@ a {
         font-size: 63px;
         letter-spacing: -5px;
         line-height: 1.1;
+    }
+}
+
+@media (min-width: 87.5em) {
+    .banner-heading {
+        font-size: 68px;
     }
 }
 
