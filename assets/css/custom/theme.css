@@ -301,9 +301,9 @@ a {
 
 .main-menu {
     height: 100vh;
-    width: 100%;
+    width: calc(100% - 80px);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: #fff;
     left: -110%;
     top: 0;
@@ -341,12 +341,15 @@ a {
 
 .close-menu {
     text-align: right;
-    padding: 20px 15px;
+    padding: 33px 33px 0;
 }
 
 .close-menu a {
-    font-size: 20px;
     color: var(--black);
+}
+
+.close-menu a span {
+    font-size: 35px;
 }
 
 .close-menu a:hover,
@@ -459,7 +462,7 @@ a {
 	position: absolute;
 	top: 50%;
     transform: translateY(-50%);
-    left: -17px;
+    left: 20px;
 	margin: 0 !important;
 }
 
@@ -467,7 +470,7 @@ a {
 	position: absolute;
 	top: 50%;
     transform: translateY(-50%);
-    right: -17px;
+    right: 20px;
 	margin: 0 !important;
 }
 
@@ -498,7 +501,13 @@ a {
     }   
     .banner-highlights {
         font-size: 16px;
-    }   
+    }  
+    .hero-slider .owl-nav .owl-prev {
+        left: -17px;
+    }
+    .hero-slider .owl-nav .owl-next {
+        right: -17px;
+    }
 }    
 
 @media only screen and (min-width: 62em) {
