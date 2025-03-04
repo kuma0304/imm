@@ -471,7 +471,8 @@ a {
     font-size: 16px;
 }
 
-.main-menu ul li a:hover {
+.main-menu ul li a:hover, 
+.main-menu ul li a.active {
     color: var(--lime-green-500);
 }
 

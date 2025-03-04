@@ -220,3 +220,19 @@ $(document).ready(function () {
         $("#modalImage").attr("src", imgSrc); // Update modal image
     });
 });
+
+// Active Menu Item
+$(document).ready(function () {
+    // Get current URL path
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Loop through menu items
+    $(".theme-menu li a").each(function () {
+        var menuItem = $(this).attr("href");
+
+        // If menu item's href matches the current page URL, add 'active' class
+        if (menuItem === currentPage) {
+            $(this).addClass("active");
+        }
+    });
+});
