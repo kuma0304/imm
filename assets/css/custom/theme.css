@@ -54,10 +54,6 @@ body {
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-track {
-    /* background-color: red; */
-}
-
 /* For Firefox */
 * {
     scrollbar-width: thin;
@@ -175,6 +171,11 @@ a {
     min-height: 45px;
 }
 
+.theme-tag.gray {
+	color: var(--base-700);
+	font-weight: 400;
+}
+
 .theme-arrow .owl-nav {
     display: flex;
     justify-content: center;
@@ -209,6 +210,66 @@ a {
     border: 1px solid var(--lime-green-500) !important;
 }
 
+.theme-arrow .owl-nav button.disabled {
+    pointer-events: none;
+}
+
+.theme-box {
+	border-radius: 20px;
+	border: 1px solid var(--base-300);
+	background: var(--base-100);
+	overflow: hidden;
+    margin: 1px;
+}
+
+.theme-link {
+    color: var(--deep-green-400);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.theme-link:hover {
+    opacity: 0.8;
+}
+
+.theme-border-top {
+	border-top: 1px solid var(--base-300);
+}
+
+.heading-24 {
+    color: var(--deep-green-900);
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    margin-bottom: 5px;
+}
+
+.heading-24.green {
+    color: var(--deep-green-500);
+}
+
+.heading-17 {
+    color: var(--lime-green-500);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.9px;
+    margin: 0;
+}
+
+.theme-list {
+	margin: 0;
+}
+
+.theme-list li {
+	padding-bottom: 10px;
+}
+
+.theme-list li:last-child {
+	padding-bottom: 0;
+}
 
 @media only screen and (min-width: 36em) {    
     .theme-button {
@@ -242,6 +303,13 @@ a {
     }
     .theme-arrow .owl-nav > button span {
         font-size: 30px;
+    }    
+    .heading-24 {
+        font-size: 24px;
+    }
+    
+    .heading-17 {
+        font-size: 18px;
     }
 }
 
@@ -254,7 +322,7 @@ a {
         line-height: 1.1;
     }
     .theme-tag {    
-        font-size: 16px;
+        font-size: 14px;
     }
     .body-text {
         font-size: 18px;
@@ -270,10 +338,9 @@ a {
         bottom: 11px;
     }
     .theme-tag {    
-        min-height: 50px;
-        height: 50px;
-        min-width: 50px;
-        font-size: 20px;
+        min-height: 45px;
+        height: 45px;
+        font-size: 17px;
     }
 }
 
@@ -468,6 +535,18 @@ a {
 
 .hero-slider-text {
     margin: 0 0 -29px;
+	color: var(--deep-green-500);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	border-radius: 100px;
+	border: 4px solid var(--base-300);
+	background: var(--base-100);
+	padding: 4px 17px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+    min-height: 45px;
 }
 
 .hero-slider .owl-nav button {
@@ -578,6 +657,9 @@ a {
     .banner-text-highlight::before {
         bottom: 11px;
     }
+    .hero-slider-text {    
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 87.5em) {
@@ -590,6 +672,11 @@ a {
     .banner-text-highlight::before {
         height: 20px;
         bottom: 11px;
+    }   
+    .hero-slider-text {    
+        min-height: 50px;
+        height: 50px;
+        font-size: 20px;
     }
 }
 
@@ -598,6 +685,7 @@ a {
         font-size: 41px;
     }
 }
+
 /* ====================== End: Hero Section ====================== */
 
 /* ====================== Start: Brands ====================== */
@@ -752,8 +840,8 @@ a {
 .course-icon {
     border-radius: 7px;
     background: var(--accent);
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    min-width: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,7 +863,7 @@ a {
 .course-box {
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 }
 
 .course-box-wrap {
@@ -833,7 +921,18 @@ a {
     }
     .right-panel .tab-content.active {
         padding: 0 20px;
-    }    
+    }       
+    .course-icon {
+        height: 40px;
+        min-width: 40px;
+        border-radius: 13px;
+    }
+    .course-icon span{
+        font-size: 28px;
+    }   
+    .course-box {
+        gap: 20px;
+    }
 } 
 
 
@@ -841,15 +940,12 @@ a {
     .course-heading {
         font-size: 25px;
     }
-    .course-icon span{
-        font-size: 40px;
-    }  
     .left-panel .accordion-heading {    
         font-size: 18px;
     }      
     .course-icon {
         height: 60px;
-        width: 60px;
+        min-width: 60px;
         border-radius: 13px;
     }
     .course-icon span{
@@ -859,7 +955,8 @@ a {
 
 @media only screen and (min-width: 87.5em) {     
     .course-heading {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 1;
     }
     .left-panel .accordion-heading {    
         font-size: 22px;
@@ -885,21 +982,6 @@ a {
 	margin-bottom: 30px;
 }
 
-.testimonials-name {
-    color: var(--deep-green-500);
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: -0.9px;
-    margin-bottom: 5px;
-}
-
-.testimonials-role {
-    color: var(--lime-green-500);
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -0.9px;
-    margin: 0;
-}
 
 .testimonials-owl {
     position: relative;
@@ -926,14 +1008,7 @@ a {
     }  
     .testimonials-box {
         padding: 40px;
-    }
-    .testimonials-name {
-        font-size: 24px;
-    }
-    
-    .testimonials-role {
-        font-size: 18px;
-    }
+    }    
 }
 
 @media only screen and (min-width: 75em) {     
@@ -1081,3 +1156,117 @@ a {
     }    
 }
 /* ====================== End: Footer ====================== */
+
+/* ====================== Start: Inner Pages ====================== */
+.inner-banner-heading {
+    color: var(--deep-green-800);
+	font-size: 29px;
+    font-weight: 700;
+	line-height: 1.1em;
+    letter-spacing: -2.2px;
+}
+
+.inner-banner-highlights {
+    border-radius: 50px;
+    background: var(--accent);
+    padding: 6px 10px;
+    color: var(--deep-green-500);
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-flex;
+}
+
+
+.inner-hero-slider-image {
+    border-radius: 30px;
+    height: 350px;
+	border: 13px solid #EBEBEB;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 23px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prof-photo img {
+	width: 100%;
+	height: 210px;
+	object-fit: cover;
+	background-position: top;
+	object-position: center;
+	border-radius: 10px;
+}
+
+.about-gallery-box {
+    border: 13px solid #EBEBEB;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 36em) {   
+    .inner-banner-heading {
+        font-size: 33px;
+        line-height: 1.2em;
+    }
+    .inner-banner-highlights {
+        padding: 6px 14px;
+        font-size: 14px;
+    }  
+}    
+
+@media only screen and (min-width: 48em) { 
+    .inner-hero-slider-image {
+        border-radius: 180px 30px 30px 30px;
+        height: 428px;
+    }   
+}
+
+@media only screen and (min-width: 62em) {
+    .inner-banner-heading {
+        font-size: 53px;
+        letter-spacing: -5px;
+        line-height: 1.1;
+    }
+    .inner-banner-highlights {
+        font-size: 15px;
+        padding: 6px 20px;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .inner-banner-heading {
+        font-size: 63px;
+    }
+    .owl-heading-btns .heading-text {
+        width: calc(100% - 270px);
+    }  
+    .owl-heading-btns .owl-nav {
+        position: absolute;
+        top: 28px;
+        right: 0;
+        margin: 0;
+    }
+    
+    .owl-heading-btns .theme-arrow {
+        position: unset;
+    }
+    
+}
+
+@media only screen and (min-width: 87.5em) {
+    .inner-banner-heading {
+        font-size: 68px;
+    } 
+    .inner-banner-highlights {
+        font-size: 20px;
+    }   
+}
+
+@media only screen and (max-width: 35.99em) {
+    .banner-text-highlight {
+        font-size: 41px;
+    }
+}
+/* ====================== End: Inner Pages ====================== */
