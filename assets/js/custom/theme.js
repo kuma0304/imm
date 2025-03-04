@@ -212,3 +212,11 @@ $(document).ready(function() {
     $('.accordion-header:first').addClass('active');
     $('.accordion-content:first').show();
 });
+
+// Custom Modal Image
+$(document).ready(function () {
+    $(".portfolio-image").click(function () {
+        let imgSrc = $(this).attr("src"); // Get the clicked image src
+        $("#modalImage").attr("src", imgSrc); // Update modal image
+    });
+});
