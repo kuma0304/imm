@@ -842,7 +842,7 @@ a {
     background: var(--accent);
     height: 35px;
     min-width: 35px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -1203,6 +1203,25 @@ a {
     border: 13px solid #EBEBEB;
     border-radius: 30px;
     overflow: hidden;
+}
+
+.industry-border {
+	border: 13px solid #EBEBEB;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.industry-border-wrap {
+	position: relative;
+	padding-bottom: 22px;
+}
+
+.industry-border-wrap .theme-tag {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 7px;
+	z-index: 999;
 }
 
 @media only screen and (min-width: 36em) {   

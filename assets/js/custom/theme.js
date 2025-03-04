@@ -134,6 +134,58 @@ $('.about-gallery-owl').owlCarousel({
     ]
 });
 
+// Careers Carousel
+$('.careers-coursel-owl').owlCarousel({
+    loop: false,
+    margin: 25,
+    nav: true,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        1200 : {
+            items: 3
+        },
+    },
+    navText: [
+        '<span class="material-symbols-outlined">arrow_left_alt</span>', 
+        '<span class="material-symbols-outlined">arrow_right_alt</span>'
+    ]
+});
+
+// Industries Carousel
+$('.industries-coursel-owl').owlCarousel({
+    loop: false,
+    margin: 25,
+    nav: true,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        1200 : {
+            items: 4
+        },
+    },
+    navText: [
+        '<span class="material-symbols-outlined">arrow_left_alt</span>', 
+        '<span class="material-symbols-outlined">arrow_right_alt</span>'
+    ]
+});
+
 // Custom Accordion and Tabs
 $(document).ready(function() {
     // Handle accordion header clicks
