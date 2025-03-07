@@ -239,6 +239,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+    $("body").addClass("fixed-header");
     let lastScrollTop = 0;
     
     $(window).on("scroll", function () {
