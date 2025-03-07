@@ -114,6 +114,10 @@ function equalizeOwlHeights() {
     $(".prof-coursel-owl .item .theme-box").css("height", maxHeight + "px");
 }
 
+$(document).ready(function () {
+    equalizeOwlHeights();
+});
+
 // About Gallery Carousel
 $('.about-gallery-owl').owlCarousel({
     loop: false,
