@@ -236,3 +236,22 @@ $(document).ready(function () {
         }
     });
 });
+
+
+$(document).ready(function () {
+    let lastScrollTop = 0;
+    
+    $(window).on("scroll", function () {
+        let currentScroll = $(this).scrollTop();
+
+        if (currentScroll < lastScrollTop) {
+            // Scrolling up
+            $("body").addClass("fixed-header");
+        } else {
+            // Scrolling down
+            $("body").removeClass("fixed-header");
+        }
+
+        lastScrollTop = currentScroll;
+    });
+});

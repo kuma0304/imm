@@ -395,6 +395,7 @@ a {
     box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.12);
     margin: 20px auto 0;
     padding: 0 20px;
+    transition: top 0.3s ease-in-out;
 }
 
 .main-header {
@@ -497,6 +498,17 @@ a {
     color: var(--primary);
 }
 
+.fixed-header {
+    padding-top: 82px;
+}
+
+.fixed-header header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+
 
 @media only screen and (min-width: 62em) {
     .hamburger {
@@ -546,6 +558,9 @@ a {
 
     .header {
         padding: 0 16px 0 31px;
+    }
+    .fixed-header {
+        padding-top: 108px;
     }
 }
 
