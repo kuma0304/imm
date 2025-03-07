@@ -393,7 +393,7 @@ a {
     border: 1px solid #CFCFCF;
     background-color: #ffffff;
     box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.12);
-    margin: 0 auto 0;
+    margin: 20px auto 0;
     padding: 0 20px;
 }
 
@@ -497,21 +497,6 @@ a {
     color: var(--primary);
 }
 
-header {
-    transition: top 0.3s ease-in-out;
-    top: 0;
-}
-
-.fixed-header {
-    padding-top: 82px;
-}
-
-.fixed-header header {
-	position: fixed;
-	width: 100%;
-	top: 20px;
-	z-index: 9;
-}
 
 @media only screen and (min-width: 62em) {
     .hamburger {
@@ -561,9 +546,6 @@ header {
 
     .header {
         padding: 0 16px 0 31px;
-    }
-    .fixed-header {
-        padding-top: 108px;
     }
 }
 
