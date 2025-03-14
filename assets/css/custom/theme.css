@@ -974,6 +974,7 @@ a {
     }   
     .course-box {
         gap: 20px;
+        max-width: calc(100% - 270px);
     }
 } 
 
