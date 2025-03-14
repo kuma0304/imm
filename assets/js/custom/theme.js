@@ -221,20 +221,22 @@ $(document).ready(function() {
 $(document).ready(function () {
     $(".portfolio-image").click(function () {
         let imgSrc = $(this).attr("src"); // Get the clicked image src
+        let imgFullName = imgSrc.split('/').pop(); // Extract full filename with extension
+        let imgName = imgFullName.split('.').slice(0, -1).join('.'); // Extract filename without extension
+
         $("#modalImage").attr("src", imgSrc); // Update modal image
+        $("#modalImage").attr("alt", imgName); // Set alt text without extension
+        $("#photoModalLabel").text(imgFullName); // Set modal title with full filename (e.g., "photography.jpg")
     });
 });
 
+
+
 // Active Menu Item
 $(document).ready(function () {
-    // Get current URL path
     var currentPage = window.location.pathname.split("/").pop();
-
-    // Loop through menu items
     $(".theme-menu li a").each(function () {
         var menuItem = $(this).attr("href");
-
-        // If menu item's href matches the current page URL, add 'active' class
         if (menuItem === currentPage) {
             $(this).addClass("active");
         }

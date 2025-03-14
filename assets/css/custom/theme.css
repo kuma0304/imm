@@ -1239,6 +1239,7 @@ a {
 	background-position: top;
 	object-position: center;
 	border-radius: 10px;
+    background: #f8f8f8;
 }
 
 .about-gallery-box {
