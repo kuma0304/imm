@@ -6,7 +6,6 @@ https://fonts.google.com/icons
 
 
 Images
-https://pixabay.com/photos/photography-studio-photo-shoot-1850469/
 https://pixabay.com/photos/technology-computer-code-javascript-1283624/
 https://pixabay.com/photos/cat-vector-abstract-drawing-2011427/
 https://pixabay.com/illustrations/resume-curriculum-vitae-biodata-cv-7324520/
@@ -16,3 +15,4 @@ https://pixabay.com/photos/studio-photography-studio-7028678/
 https://www.pexels.com/photo/black-dslr-camera-mounted-on-black-tripod-212372/
 https://www.pexels.com/photo/white-printer-paper-196645/
 https://pixabay.com/photos/student-typing-keyboard-text-woman-849822/
+https://pixabay.com/photos/flowers-photo-album-polaroids-7801751/
