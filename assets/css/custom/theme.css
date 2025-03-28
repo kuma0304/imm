@@ -848,7 +848,7 @@ a {
     background: var(--lime-green-100);  
 }
 
-.left-panel .accordion-heading {    
+.accordion-heading {    
     color: var(--deep-green-500);
     font-size: 18px;
     font-weight: 700;
@@ -969,6 +969,10 @@ a {
         min-width: 40px;
         border-radius: 13px;
     }
+    .course-img {
+        height: 40px;
+        min-width: 40px;
+    }
     .course-icon span{
         font-size: 28px;
     }   
@@ -983,7 +987,7 @@ a {
     .course-heading {
         font-size: 25px;
     }
-    .left-panel .accordion-heading {    
+    .accordion-heading {    
         font-size: 18px;
     }      
     .course-icon {
@@ -1001,7 +1005,7 @@ a {
         font-size: 28px;
         line-height: 1;
     }
-    .left-panel .accordion-heading {    
+    .accordion-heading {    
         font-size: 22px;
     }  
 }
