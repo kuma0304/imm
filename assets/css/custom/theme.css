@@ -1270,6 +1270,7 @@ a {
 	transform: translateX(-50%);
 	bottom: 7px;
 	z-index: 999;
+    white-space: nowrap;
 }
 
 @media only screen and (min-width: 36em) {   
@@ -1288,6 +1289,9 @@ a {
         border-radius: 180px 30px 30px 30px;
         height: 428px;
     }   
+    .course-heading-full-width .course-box {
+        max-width: 100% !important;
+    }
 }
 
 @media only screen and (min-width: 62em) {
