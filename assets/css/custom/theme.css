@@ -974,7 +974,7 @@ a {
     }   
     .course-box {
         gap: 20px;
-        /* max-width: calc(100% - 270px); */
+        max-width: calc(100% - 300px);
     }
 } 
 
@@ -1031,10 +1031,10 @@ a {
 }
 
 .testimonials-owl .owl-nav {
-	margin: 0 !important;
+	/* margin: 0 !important;
 	position: absolute;
     left: 25px;
-    bottom: 25px;
+    bottom: 25px; */
 }
 
 @media only screen and (min-width: 48em) {     
@@ -1045,9 +1045,9 @@ a {
 
 @media only screen and (min-width: 62em) {     
     .testimonials-owl .owl-nav {
-        right: 40px;
+        /* right: 40px;
         bottom: 40px;
-        left: inherit;
+        left: inherit; */
     }  
     .testimonials-box {
         padding: 40px;
